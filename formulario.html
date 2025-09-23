@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="tienda virtual" content="clientes">
+  <meta name="formulario" content="organicos">
+  <title>FORMULARIO DE ECOMARKET</title>
+  <link rel="stylesheet" href="/CSS/estilos1.css">
+</head>
+<body>
+
+  <form>
+    <!-- Nombres -->
+    <label for="fname">NOMBRES:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <!-- Apellidos -->
+    <label for="lname">APELLIDOS:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <!-- Dirección -->
+    <label for="dire">DIRECCIÓN:</label><br>
+    <input type="text" id="dire" name="dire"><br>
+
+    <!-- Estado civil -->
+    <label>ESTADO CIVIL</label><br>
+    <input type="radio" id="soltero" name="ecivil" value="soltero">
+    <label for="soltero">Soltero(a)</label><br>
+
+    <input type="radio" id="casado" name="ecivil" value="casado">
+    <label for="casado">Casado(a)</label><br>
+
+    <input type="radio" id="viudo" name="ecivil" value="viudo">
+    <label for="viudo">Viudo(a)</label><br>
+
+    <input type="radio" id="divorciado" name="ecivil" value="divorciado">
+    <label for="divorciado">Divorciado(a)</label><br>
+
+    <!-- Preferencias -->
+    <label>PREFERENCIA</label><br>
+    <input type="checkbox" id="enlatados" name="prefe[]" value="enlatados">
+    <label for="enlatados">Alimentos enlatados</label><br>
+
+    <input type="checkbox" id="frescos" name="prefe[]" value="frescos">
+    <label for="frescos">Alimentos frescos</label><br>
+
+    <!-- Fecha -->
+    <label for="fcompra">Fecha de compra</label><br>
+    <input type="date" id="fcompra" name="fcompra"><br>
+
+    <!-- Email -->
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Botón -->
+    <input type="submit" value="Guardar">
+  </form>
+
+</body>
+</html>
