@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de login -->
+  <div id="login-container">
+    <h1>Eco Market</h1>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido" placeholder="Apellido">
+    <input type="email" id="correo" placeholder="Correo">
+    <button onclick="iniciarSesion()">Ingresar</button>
+  </div>
+
+  <!-- Menú principal -->
+  <div id="menu-container">
+    <h2>Bienvenido a Eco Market</h2>
+    <nav>
+      <button onclick="mostrarProductos('frutas')">Frutas</button>
+      <button onclick="mostrarProductos('verduras')">Verduras</button>
+      <button onclick="mostrarProductos('granos')">Granos</button>
+    </nav>
+  </div>
+
+  <!-- Productos -->
+  <div id="productos-container">
+    <h2 id="categoria-titulo"></h2>
+    <div id="lista-productos"></div>
+    <button onclick="volverMenu()">Volver</button>
+  </div>
+
+  <!-- Carrito -->
+  <div id="carrito">
+    <h3>🛒 Carrito</h3>
+    <ul id="carrito-lista"></ul>
+    <p>Total: S/<span id="carrito-total">0</span></p>
+    <button onclick="finalizarCompra()">Finalizar compra</button>
+  </div>
+
+  <!-- Mensaje de compra -->
+  <div id="gracias">
+    <h2>🎉 Gracias por tu compra 🎉</h2>
+    <button onclick="volverMenu()">Volver al Menú</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
